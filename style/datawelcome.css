@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+
+/*************welcom************/
+
+.signup-btn, .login-btn{
+    color: #ffffff;
+    background-color: cornflowerblue;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: cursive;
+  }
+
+  button:hover, button:active{
+    background: lightblue;
+  }
+
+  .welcomeContainer{
+    width: 95%;
+    box-shadow: 0 0 3px 0 white;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    font-family: cursive;
+
+
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-image-slice: 1;
+  }
+  
+  hr{
+    margin-top: 20px;
+    width:80%;
+  }
+  
+  .or{
+   background: black;
+   color: white;
+   width: 30px;
+   margin: -19px auto 10px; 
+   font-size: 15px;
+  }
+  
+  
+  
+  
+/* 
+  html,body,div {
+    height: 100%; 
+    background-color: #1d1d1d;
+   
+   } */
+   
+.contact-fp-wrap {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.booton {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 4px;
+  stroke: url('#logo-gradient');
+}
+
+.booton-text {
+  color: #fff;
+  font-family: 'Lato';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.contact-fp-wrap:hover .booton {
+  cursor: pointer;
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
+
+/************/
+
+
+/* 
+div {
+  height: 100%; 
+  background-color: #1d1d1d;
+ 
+ } */
+ 
+ 
+
+/***********/
+
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+/* 
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+} */
+/* 
+svg {
+    display: block;
+    font:  5.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+} */
+
+
+/*****************/
+
+
+
+
+.cloud-text {
+	font-family: 'Coiny', cursive;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	/* background-image: url("images/pacmanBg2.jpg"); */
+	background-size: auto;
+	background-attachment: unset;
+	background-position: 0%;
+	width: 80%;
+	margin: 10%;
+	font-size: 100px;
+	animation: clouds-moving infinite 50s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+.attribute {
+	position: relative;
+	font-size: 26px;
+	text-align: center;
+}
+
+
+/************************/
+/* body {
+  margin:0;
+  background-color:#191919;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Helvetica,Sans-serif;
+} */
+a {
+  text-decoration:none;
+  color:#FFF;
+  font-size: 30px;
+  font-family: "Lobster";
+
+}
+
+a:hover {
+  text-decoration:none;
+  color:#FFF;
+  font-size: 32px;
+  font-family: "Lobster";
+}
+.rainbow-button {
+  width:calc(10vw + 6px);
+  height:calc(4vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  /* font-size:3vw; */
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:10vw;
+  height:4vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}

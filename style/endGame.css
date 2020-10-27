@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*,*::after,*::before{
+    box-sizing:border-box;
+}
+.endModal{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(211, 174, 125);
+   height: 280px;
+    width:500px;
+    max-width: 80%;
+    border: white solid 1px;
+}
+
+.endModal.active{
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.model-header-end{
+    padding:10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.model-header-end .end-title{
+    font-size:  1.25 rem;
+    font-weight: bold;
+    font-family: "Luckiest Guy";
+}
+
+.close-button{
+    cursor: pointer;
+    border:none;
+    outline:none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00d7c3;
+    font-size: 30px;
+
+}
+
+.model-body-end{
+    padding:10px 15px;
+    font-size:  1.25 rem;
+    font-weight: bold;
+    font-family: "Luckiest Guy";
+}
+
+#overlay{
+    position:fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+   
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events:all;
+}
+
+
+.button {
+    width: 120px;
+    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Press Start 2P";
+    margin-left: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .button-1 {
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  .button-1:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+  }
+
+  .close-button:hover{
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    border: none;
+    border-radius: 20px;
+  }

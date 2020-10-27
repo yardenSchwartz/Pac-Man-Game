@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tiran+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+.settingSection{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+.errorSetting{
+    color: red;
+    display: none;
+    margin:0px 0px 0px 0px ;
+}
+.mainHeadline{
+    font-family: "Bungee Shade";
+    font-size: 40px;
+}
+
+.settingHeaders{
+    font-family: "Fredoka One";
+    font-size: 30px;
+
+    display: flex; 
+    flex-direction: row; 
+
+    
+
+}
+.settingHeaders:before, .settingHeaders:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+
+
+
+.settingConteiner{
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding: 0px 0px 0px 0px;
+    margin:30px auto 0px;
+    text-align: center;
+    width: 50%;
+    color: white;
+    /* background-color: black transparent; */
+    background-color: rgba(3, 1, 1, 0.9);
+    font-family: "Fredoka One";
+    /* margin-top: 10%; */
+    height: 1000px;
+}
+.settingLabels{
+    font-family: "Nunito";
+    font-size: 15px;
+}
+
+.subsection{
+    border-top: white solid 3px;
+ 
+}
+
+ul {list-style-type: none; width: 784px; margin: 0 auto;}
+li {float: left;}
+
+.keyboard{
+    /* margin-left: 40%; */
+    /* padding-left:30%;
+    padding-right:45%;
+	padding-top: 0px; */
+	/* margin-bottom: 20px; */
+	margin-left: 30%;
+   
+}
+span{
+   text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    vertical-align: middle;
+    color:white;
+    
+}
+.key{
+
+    text-align: center;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+      line-height: 5;
+
+   
+	display: block;
+	font: bold 9pt arial;
+	text-decoration: none;
+	text-align: center;
+	width: 44px;
+	height: 41px;
+	margin: 5px;
+    background:  #ff8080;
+    
+	border-radius: 4px;
+	border-radius: 4px;
+	border-top: 1px solid #f5f5f5;
+	box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 1px 3px #333;
+  box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	text-shadow: 0px 1px 0px #f5f5f5;
+} 
+
+
+.key:active, .keydown {
+	color: #888;
+	background: #ca7c6d;
+	margin: 7px 5px 3px;
+	box-shadow:
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	border-top: 1px solid #eee;}
+	
+
+.key:active, .keydown {
+	color: #888;
+	background: #ca7c6d;
+	margin: 7px 5px 3px;
+	box-shadow:
+		inset 0 0 25pxyy #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	border-top: 1px solid #eee;}
+	
+
+ul ol {list-style-type: none;}
+#down {height: 59px;width: 80px;}
+#up, #left, #right {height: 60px;width: 80px;}
+#left, #right {margin: 65px 0px 0px;}
+#left:active, #right:active {margin: 67px 2px 3px ;}
+#up {margin: 0px 5px 70px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;}
+#up:active {margin: 8px 5px 70px;}
+#down {margin: 0px 5px 10px; border-top-left-radius: 0px; border-top-right-radius: 0px;}
+#down:Active {margin: 3px 5px 4px;}
+
+
+ul {padding: 0px; margin: 0;}
+
+
+.numberBig{
+    width: 70px;
+}
+.numberSmall{
+    width: 40px;
+}
+
+.color-picker{
+    border-radius: 6px;
+    margin-right: 10px;
+
+}
+
+.after-press-span{
+	font-size: 10px;
+	size:10px;
+	color: black;
+	font-family: cursive;
+}
+
+
+
+ul {
+	margin: 30px auto;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+@-moz-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@-o-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+.round {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;		
+	text-decoration: none;		
+	text-align: center;
+	font-size: 25px;		
+	text-shadow: 0 1px 0 rgba(255,255,255,.7);
+	letter-spacing: -.065em;
+	font-family: "Hammersmith One", sans-serif;		
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+	border-radius: 300px;
+	z-index: 1;
+	border-width: 4px;
+	border-style: solid;
+}
+
+.round:hover {
+	width: 130%;
+	height: 130%;
+	left: -15%;
+	top: -15%;
+	font-size: 33px;
+	padding-top: 38px;
+	-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	z-index: 2;
+	/* border-size: 10px; */
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}
+
+a.red {
+	background-color: rgba(239,57,50,1);
+	color: rgba(133,32,28,1);
+	border-color: rgba(133,32,28,.2);
+}
+
+a.red:hover {
+	color: rgba(239,57,50,1);
+}
+
+a.green {
+	background-color: rgba(1,151,171,1);
+	color: rgba(0,63,71,1);
+	border-color: rgba(0,63,71,.2);
+}
+
+a.green:hover {
+	color: rgba(1,151,171,1);
+}
+
+a.yellow {
+	background-color: rgba(252,227,1,1);
+	color: rgba(153,38,0,1);
+	border-color: rgba(153,38,0,.2);
+}
+
+a.yellow:hover {
+	color: rgba(252,227,1,1);
+}
+
+.round span.round {
+	display: block;
+	opacity: 0;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	font-size: 1px;
+	border: none;
+	padding: 40% 20% 0 20%;
+	color: #fff;
+}
+
+.round span:hover {
+	opacity: .85;
+	font-size: 16px;
+	-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	-o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);	
+}
+
+.green span {
+	background: rgba(0,63,71,.7);		
+}
+
+.red span {
+	background: rgba(133,32,28,.7);		
+}
+
+.yellow span {
+	background: rgba(161,145,0,.7);	
+
+
+}

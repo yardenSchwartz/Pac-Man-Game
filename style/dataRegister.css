@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+
+.dataRegister{
+    background-image: url(images/pacman_background);
+    width: 100%;
+}
+
+.signInHeader{
+  font-family: "Bungee Shade";
+  font-size: 65px;
+}
+
+.registerContainer{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.9);
+    padding:0 0 20px;
+    /* opacity: 0.6; */
+    padding-top: 10px;
+    margin: 0px auto 0px;
+    text-align: center;
+    width: 50%;
+    color: white;
+    /* background: rgba(0,0,0,0.5); */
+    background-color: rgba(3, 1, 1, 0.4);
+    font-family: cursive;
+    width: 800px;
+    height: 650px;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 14px;
+}
+
+.submit-btn{
+    color: #ffffff;
+    background-color: cornflowerblue;
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: cursive;
+  }
+
+  form .error {
+    color: #ff0000;
+    font-size: 16px;
+  }
+
+  .registerTable tr{
+    text-align: left;
+    font-size: 24px;
+  }
+
+

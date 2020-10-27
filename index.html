@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/datawelcome.css" />
+    <link rel="stylesheet" type="text/css" href="./style/dataLogin.css" />
+    <link rel="stylesheet" type="text/css" href="./style/dataRegister.css" />
+    <link rel="stylesheet" type="text/css" href="./style/setting.css" />
+    <link rel="stylesheet" type="text/css" href="./style/about.css" />
+    <link rel="stylesheet" type="text/css" href="./style/app.css" />
+    <link rel="stylesheet" type="text/css" href="./style/endGame.css" />
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="jquery-3.4.1.slim.min.js"></script>
+
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="jvCode/welcomCode.js"></script>
+    <script type="text/javascript" src="jvCode/menuCode.js"></script>
+    <script type="text/javascript" src="jvCode/registerCode.js"></script>
+    <script type="text/javascript" src="jvCode/setting.js"></script>
+    <script type="text/javascript" src="jvCode/about.js"></script>
+    <script type="text/javascript" src="jvCode/app.js"></script>
+    <script type="text/javascript" src="jvCode/endGame.js"></script>
+
+    <script src="https://kit.fontawesome.com/c96c3db330.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/f35a"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>PAC-MAN Game </title>>
+    
+
+
+
+</head>
+
+
+
+<body class="body" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+    <div id="overlay"></div>
+
+    <header id="headerPage">
+        <!-- <div class="page-header" ></div> -->
+        <!-- <img class="logo-crop" src="images/logo2.jpg" alt="Pac-Man Logo"> -->
+        <div class="logo"></div>
+    </header>
+
+    <div class="menuContext">
+        <div class="menu" id="menu">
+            <img id="pacman_icon" style="width: 5%; height: 60px;  margin-top: 1px"
+                src="images/pacman_icon1_withoutBg.png">
+            <a class="welcome" href="#welcome" data-option="dataWelcome" onclick="changeWindow(this)"
+                style="width: 15%; height: 100%;"><b>Welcome</b></a>
+            <img id="pacman_icon" style="width: 5%; height: 60px;  margin-top: 1px"
+                src="images/pacman_icon1_withoutBg.png">
+            <a class="login" href="#login" data-option="dataLogin" onclick="changeWindow(this)"
+                style="width: 15%;  height: 100%;"><b>Log in</b></a>
+            <img id="pacman_icon" style="width: 5%; height: 60px;  margin-top: 1px"
+                src="images/pacman_icon1_withoutBg.png">
+
+            <a class="signin" href="#register" data-option="dataRegister" onclick="changeWindow(this)"
+                style="width: 15%; height: 100%;"><b>Sign
+                    up</b></a>
+            <img id="pacman_icon" style="width: 5%; height: 60px;  margin-top: 1px"
+                src="images/pacman_icon1_withoutBg.png">
+
+            <a class="about" href="#about" data-option="aboutSection" onclick="openModel()"
+                style="width: 15%;  height: 100%;"><b>
+
+                    About
+
+                </b></a>
+            <img id="pacman_icon" style="width: 5%; height: 60px;  margin-top: 1px"
+                src="images/pacman_icon1_withoutBg.png">
+
+            <a class="setting" href="#setting" data-option="settingSection" style="width: 15%;  height: 100%;"
+                onclick="changeWindow(this)"><b>Settings</b></a>
+
+        </div>
+    </div>
+
+    <!-- style="margin:0px 0px 0px 0px;padding: 0px 0px 0px 0px; height: 500px;" -->
+    <div id="mainContainer" class="main" style="margin:0px 0px 0px 0px;padding: 0px 0px 0px 0px; height:100%;">
+        <section id="dataWelcome"
+            style=" height: 900px; width: 100%;   padding-top: 10%;background-image: url('images/welcomeBackground2.jpg');">
+
+            <div class="welcomeContainer" style="margin-top: 0px; padding-bottom: 100px;">
+                <img id="pacman_icon" style="width: 70px; margin-top: -90px;" src="images/pacman_icon_withoutBG.png">
+
+                <p class="cloud-text cloud-title"
+                    style="	background-image: url('images/packmanBack3.jpg'); margin-bottom: 0px ; padding-bottom: 0px; margin-top: 0px;">
+                    Welcome To<br> Pac-Man!</p>
+
+
+                <div style="float: left; display: flex; justify-content: center; margin-left: 35%;">
+                    <a href="#" class="rainbow-button" alt="Sign Up" onclick="changeWindowById('dataRegister')"></a>
+
+                    <a href="#" class="rainbow-button" alt="Login" onclick="changeWindowById('dataLogin')"
+                        style="margin-left: 100px;"></a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="dataRegister"
+            style="display: none; background-image: url(images/pacman_background.jpg);  height: 900px; width: 100%;   padding-top: 4%;">
+
+            <div class="registerContainer" style="margin:0 auto;">
+
+                <form id="registrationForm" role="form" method="post" action="" class="registrationForm"
+                    name="registration">
+                    <h1 class="signInHeader" style=" margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">Sign-up</h1>
+
+                    <table class="registerTable" style="width:80%; margin: 0 auto;  table-layout: fixed; ">
+                        <tr>
+
+                            <th><label for="fName"><b>Full Name</b></label></th>
+                            <th><input type="text" class="input-box" placeholder="Enter full name" id="fullname"
+                                    name="fullname" required></th>
+                        </tr>
+                        <tr>
+
+                            <th><label for="uName"><b>User Name</b></label></th>
+                            <th><input type="text" class="input-box" placeholder="Enter UserName" id="register_username"
+                                    name="register_username" required></th>
+                        </tr>
+                        <tr>
+
+                            <th><label for="psw"><b>Password</b></label></th>
+                            <th style="text-align: left;"><input type="password" class="input-box"
+                                    id="register_password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                                    name="register_password" minlength="6" required>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><label for="email"><b>Email</b></label></th>
+                            <th><input type="email" class="input-box" placeholder="Enter Email" id="email" name="email"
+                                    required>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><label for="dt"><b>BirthDate</b></label></th>
+                            <th><input name="dt" id="bDate" class="input-box" style="text-align: center;" type="date"
+                                    required />
+                            </th>
+                        </tr>
+                    </table>
+
+                </form>
+                <br>
+                <button type="submit" onclick="register()" class="submit-btn">Submit</button>
+
+            </div>
+        </section>
+
+        <section id="dataLogin"
+            style="display: none; background-image: url(images/pacman_background.jpg);  height: 700px; width: 100%;   padding-top: 4%;">
+            <div class="loginContainer" id="loginContainer">
+                <form id="loginForm" role="form" method="post" action="">
+                    <h1 class="loginHeader" style=" margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">Log-in</h1>
+                    <p class="error" id="errorId" style="margin-top: 0;">  </p>
+                    <table class="loginTable" style="width:80%; margin: 0 auto;  table-layout: fixed; ">
+                        <tr>
+                            <th><label for="login_username">User Name</label></th>
+                            <th><input id="login_username" placeholder="User Name" type="text" name="login_username">
+                            </th>
+                        </tr>
+                        <th><label for="login_password">Password</label></th>
+                        <th><input id="login_password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                                type="password" name="login_password"></th>
+
+                    </table>
+                </form>
+                <br>
+                <button type="submit" onclick="login()" class="loginB">Login</button>
+
+            </div>
+
+        </section>
+
+
+        <section id="gameSection" name="gameSection"
+            style="display: none; height: 1100px; width: 100%; padding-top: 5%;background-image: url(images/gameBack1.jpeg);  background-size:cover;background-repeat: repeat-y;">
+
+
+            <!--above the board-->
+            <table class="gameImportantDetails " style="width:60%;
+              color: white;margin-top: -3%;   margin-left: 12%;
+         float: left; border: 2px solid white; border-radius: 60px; background-color: black;">
+                <tr>
+                    <th> <label for="lblUserName" style="font-size: 30px; color: red;"><strong>Welcome </strong></label></th>
+                    <th> <input id="lblUserName" type="text" disabled="disabled"></th>
+                    <th> <label for="lblScore">Score:</label></th>
+                    <th> <input id="lblScore" type="text" disabled="disabled" /></th>
+                    <th> <label for="lblTime">Time:</label> </th>
+                    <th> <input id="lblTime" type="text" /> </th>
+                    <th>
+                        <div id="disqualification">
+                            <table style="margin-left:auto;margin-right:auto;">
+                                <tr>
+                                    <td>Life:</td>
+                                    <td><img id="pacman1" src="./images/pacman_icon_withoutBG.png" width="30"
+                                            height="30"></td>
+                                    <td><img id="pacman2" src="./images/pacman_icon_withoutBG.png" width="30"
+                                            height="30"></td>
+                                    <td><img id="pacman3" src="./images/pacman_icon_withoutBG.png" width="30"
+                                            height="30"></td>
+                                    <td><img id="pacman4" src="./images/pacman_icon_withoutBG.png" width="30"
+                                            height="30"></td>
+                                    <td><img id="pacman5" src="./images/pacman_icon_withoutBG.png" width="30"
+                                            height="30"></td>
+                                    <td><img style="display: none;" id="pacman6"
+                                            src="./images/pacman_icon_withoutBG.png" width="30" height="30"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </th>
+
+                </tr>
+            </table>
+
+            <div class="settingContainer" style="width:1700px;  margin-top: 10px;">
+
+                <div class="board"
+                    style="float: left; display: flex; margin-left: 140px; justify-content: center; margin-top: 0px;">
+                    <div class="gameSetting"
+                        style="background-image: url(images/setting1.png); height: 600px;     font-size: 15px;">
+                        <div class="arrows">
+                            <i id="up-arrow" class="fas fa-arrow-up" style="font-size: 15px;"></i>
+                            <br>
+                            <i id="down-arrow" class="fas fa-arrow-down" style="font-size: 15px;"></i>
+                            <br>
+                            <i id="left-arrow" class="fas fa-arrow-left" style="font-size: 15px;"></i>
+                            <br>
+                            <i id="right-arrow" class="fas fa-arrow-right" style="font-size: 15px;"></i>
+                        </div>
+
+                        <div class="otherSetting" style="color:black;">
+                            <br>
+                            <span class="setting-text" style="font-size: 15px;">👹 Monsters: </span><i
+                                id="monster-setting"></i>
+
+                            <p><i class="fas fa-circle" id="firstPoint" style="font-size: 15px;"></i> <span
+                                    class="setting-text" style="font-size: 15px;">- 5 Point</span>
+                            </p>
+
+                            <p><i class="fas fa-circle" id="secondPoint"
+                                    style="font-size: 15px;margin-bottom: 0px;"></i><span class="setting-text"
+                                    style="font-size: 15px; margin-bottom: 0px;">- 15
+                                    Point</span></p>
+
+                            <p><i class="fas fa-circle" id="thirdPoint" style="font-size: 15px;"></i><span
+                                    class="setting-text" style="font-size: 15px;">- 25 Point</span>
+                            </p>
+                            </i>
+
+                            <table style="margin: 0 auto;  table-layout: fixed;">
+                                <tr>
+                                    <th><span class="setting-text" style="font-size: 15px;">Total Balls: </span><i
+                                        id="totalBalls"></i> </th>
+                                        <th><div class="imageSound">
+                                            <img id="onSound" src="./images/on.png" width="50" height="50"
+                                            onclick="soundOff()" style="z-index: +1; position: relative;">
+                                            <img id="muteSound" src="./images/off.png" width="50" height="50"
+                                            onclick="soundOn()" style="z-index: +1; position: relative; display: none;">
+                                        </div></th>
+                                </tr>
+                                <tr>
+                                    <th>  <span class="setting-text" style="font-size: 15px;">Total Time: </span><i
+                                        id="totalTime"></i></th>
+                                </tr>
+                            </table>
+                        
+                            <div> <a  class="newGame-bth" onclick="startNewGame()" alt="Start new game"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="game">
+                        <canvas id="canvas" height="600" width="900" style="background-color: black;"></canvas>
+                        <div style="display:none; z-index: +1;">
+                            <img id="monster-img" src="./images/monster4.jpg" width="300" height="227"
+                                style="z-index: +1; position: relative;">
+                            <img id="monster2-img" src="./images/monster2_withoutBg.png" width="300" height="227"
+                                style="z-index: +1; position: relative;">
+                            <img id="monster3-img" src="./images/monster3_withoutBg.png" width="300" height="227"
+                                style="z-index: +1; position: relative;">
+                            <img id="monster4-img" src="./images/monst5.png" width="300" height="227"
+                                style="z-index: +1; position: relative;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="aboutSection">
+        </section> -->
+        <div class="model" id="model" style=" background-image: url(images/pacBackground1.jpg);  background-repeat: no-repeat;
+        background-size:500px 380px; text-align: center;">
+            <div class="model-header">
+                <div class="title" style="color: azure; font-family: cursive;font-size: 30px;"> About Us</div>
+                <button class="close-button" onclick="closeModel()">&times;</button>
+            </div>
+            <div class="model-body">
+                <p style="color: azure; font-family: cursive;">
+                    Code and develop by Yarden Schwartz and Eden Mizrahi.
+                    <br>
+                    <strong>JQuery Plugin:</strong> "jquery.validate" for login and registration form validation. 
+                    <br>
+                    <strong>jQuery Template:</strong> none
+                    <br>
+                    The most complex part for us was understanding and learning a new languages from zero,
+                    and to handle with languages without compiler 😄
+                    <br>
+                    We hope you enjoy our game at least as much we enjoyed doing it :)
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <section id="settingSection" style="display: none;">
+            <div
+                style="background-image: url('images/pacBackground3.jpg'); height: 1100px; width: 100%;   padding-top: 5%;">
+                <div class="settingConteiner">
+                    <!-- <img style=" width: 200px; margin-top: -140px;" src ="images/packman4e.jpg"> -->
+                    <p class="mainHeadline" style="margin-top: 0px;margin-bottom: 0px;">Almost There...</p>
+                    <form>
+                        <div class="subsection">
+                            <div>
+                                <p class="settingHeaders" style=" margin-top: 0px;">Choose your in-game keyboard:</p>
+
+                            </div>
+
+                            <div class="keyboard">
+                                <ul>
+                                    <li><a class="key c37" id="left" onclick="leftKeyHandling()"
+                                            style="padding-top: 5px;"><span><i class="fas fa-arrow-alt-circle-left"
+                                                    id="leftC"></i></span> </a></li>
+                                    <li><a class="key c38" id="up" onclick="upKeyHandling()"
+                                            style="padding-top: 5px;"><span><i
+                                                    class="fas fa-arrow-alt-circle-up"></i></span></a>
+                                        <a class="key c40" id="down" onclick="downKeyHandling()"
+                                            style="padding-top: 5px;"><span><i
+                                                    class="fas fa-arrow-alt-circle-down"></i></span></a>
+                                    </li>
+                                    <li><a class="key c39" id="right" onclick="rightKeyHandling()"
+                                            style="padding-top: 5px;"><span><i
+                                                    class="fas fa-arrow-alt-circle-right"></i></span></a></li>
+                                </ul>
+                            </div>
+                            <p id="keyerror" style="display: none;color:red;text-align: center;"></p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div style="border-top: white solid 3px; margin-top: -2px;">
+                            <p class="settingHeaders" style="margin-top: 1px; margin-bottom: 0px;">Just For Fun:</p>
+
+                            <label class="settingLabels" for="numberOfBalls"><b>Number Of Balls:</b></label>
+                            <input type="nob" class="input-box numberBig" id="numberOfBalls" placeholder="50-90"
+                                name="nob" required>
+
+                            <p class="errorSetting" id="ballsError"></p>
+                            <p
+                                style="font-family: Nunito; font-size: 20px; margin-top: -2px;border-bottom: seashell solid 3px; width:30%;margin-left: 35%;">
+                                <b>Pick A Color For Each Ball:</b></p>
+
+                            <div style="float:center">
+
+                                <label class="settingLabels" for="5point"><b>5 Point Ball:</b></label>
+                                <input type="color" class="color-picker" id="colorpadfirst" value="#b7ded2">
+
+                                <label class="settingLabels" for="15point"><b>15 Point Ball:</b></label>
+                                <input type="color" class="color-picker" id="colorpadsecond" value="#f7c297">
+
+                                <label class="settingLabels" for="25point"><b>25 Point Ball:</b></label>
+                                <input type="color" class="color-picker" id="colorpadfirstthird" value="#f6a6b2">
+                            </div>
+                            <br>
+                        </div>
+                        <div>
+                            <label class="settingLabels" for="time"><b>Game Time(Seconds):</b></label>
+                            <input type="nob" class="input-box numberBig" id="choosenGameTime" placeholder="Min 60"
+                                required />
+                            <p class="errorSetting" id="timeError"></p>
+
+                        </div>
+
+                        <label class="settingLabels" for="numberOfMonsters"><b>Number Of Monsters:</b></label>
+                        <input type="nob" class="input-box numberSmall" id="numberOfMonsters" placeholder="1-4"
+                            name="nob" required>
+                        <p class="errorSetting" id="monsterError"></p>
+
+                    </form>
+                    <br>
+                    <!-- <button type="button" class="startGame-btn" id="start" onclick="start(this)">START!</button>
+                    <button type="button" class="startGame-btn" id="random" onclick="random(this)">Random Values And
+                        Start</button> -->
+                    <ul style="margin-left: 35%;">
+                        <li onclick="start(this)"><a href="#" class="round red">Start<span class="round">Are You Ready
+                                    For Packman?!</span></a></li>
+                        <li onclick="random(this)"><a  class="round yellow">Rand<span class="round">This Pick
+                                    <br>Values For You</span></a></li>
+                    </ul>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="endModal" id="endModal" style="  background-repeat: no-repeat;
+        background-size:500px 280px; text-align: center;">
+            <div class="model-header-end">
+                <div class="end-title" id="titleEnd" style=" font-size: 40px;"></div>
+                <button class="close-button" onclick="closeEndModal()">&times;</button>
+            </div>
+            <div class="model-body-end" id="model-body">
+            </div>
+            <!-- <button type="button" class="new-game-end" id="new-game-end" onclick="backToGame()" style="margin-top: 25%;">New Game</button> -->
+            <div class="button button-1" id="end-game-btn" style="margin-top: 25%;   margin-left: 0px;"
+                onclick="backToGame()">New Game</div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3 class="packmanFooter" style="  color:#00008B;
+            font-family: 'Sigmar One'; margin-bottom: 0px;"><b>Packman</b><img src="images/footerIcon.png"
+                    alt="Smiley face" height="50" width="42"></h3>
+            <p class="footer-links" style="margin-top: 0px;">
+                <a href="#" onclick="changeWindowById('dataWelcome')" class="link-1"
+                    style="color: #CCCC00;font-size: 15px;">Home</a>
+
+                <a href="#" onclick="changeWindowById('dataRegister')" style="color: #FFFF00;font-size: 15px;">Sign
+                    In</a>
+
+                <a href="#" onclick="changeWindowById('dataLogin')" style="color: #FFFF99	;font-size: 15px;">Log In</a>
+
+                <a href="#" style="color: #FFFFCC	; font-size: 15px;" onclick="openModel()">About</a>
+
+            </p>
+            <p class="footer-company-about" style="text-align: left; font-family: 'Chewy';">
+                <span
+                    style="text-align: left; margin-bottom: 0px; border-bottom: blanchedalmond solid 2px; width: 22%;  font-family: 'Chewy';">About
+                    The Game - </span>
+                Playing Pacman is easy to learn and hard to master.<br>
+                Simply score as many points as you can eating <br>the small dots all around the maze.<br>
+                Remember! You have to be careful of the monsters.
+
+            </p>
+
+
+
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Ben Gurion University</span> Beer Sheva, Israel</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a style="font-size: 15px;" href="mailto:schyarde@post.bgu.ac.il">schyarde@post.bgu.ac.il</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a style="font-size: 15px;" href="mailto:edenmizr@post.bgu.ac.il">edenmizr@post.bgu.ac.il</a></p>
+            </div>
+
+
+        </div>
+
+        <div class="footer-right" style="padding-top: 0px;">
+
+            <div class="footer-icons" style="margin-top: 0px;">
+                <p style="margin-top: 0px; font-family: Dancing Script; margin-bottom: 5px;"><b>Yarden Schwartz:</b></p>
+                <a href="https://www.facebook.com/yarden.schwartz.7"><i class="fa fa-facebook"></i></a>
+
+                <a href="https://www.linkedin.com/in/yarden-schwartz-60a5b0177/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/yardenSchwartz?tab=repositories"><i class="fa fa-github"></i></a>
+
+                <br>
+                <p style="font-family: Dancing Script; margin-bottom: 5px;">EdenMizrahi: </p>
+
+                <a href="https://www.facebook.com/eden.mizrahi.18"><i class="fa fa-facebook"></i></a>
+
+                <a href="https://www.linkedin.com/in/eden-mizrahi-1264841a3/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/edenmizrahi?tab=repositories"><i class="fa fa-github"></i></a>
+
+            </div>
+            <p class="footer-company-name" style="margin-top: 35px;">Yarden Schwartz & Eden Mizrahi ֲ© 2020</p>
+            <!-- <img src="images/monsrersbg.png" alt="Smiley face" height="50" width="250"> -->
+
+        </div>
+
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+    <script src="jvCode/setting.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="jvCode/registerCode.js"></script>
+    <script type="text/javascript" src="jvCode/welcomCode.js"></script>
+    <script type="text/javascript" src="jvCode/loginCode.js"></script>
+    <script type="text/javascript" src="jvCode/menuCode.js"></script>
+</body>
+
+
+</html>

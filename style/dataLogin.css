@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+
+.dataLogin{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+.loginHeader{
+    font-family: "Bungee Shade";
+    font-size: 65px;
+}
+
+.loginContainer{
+  
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding:0px 0px 0px 0px;
+    padding-top: 30px;
+    margin: 0px auto 0px;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(3, 1, 1, 0.9);
+    font-family: cursive;
+    height: 800px;
+    width: 500px;
+  
+}
+
+#login_username, #login_password{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 14px;
+}
+
+.loginContainer{
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding:0 0 20px;
+    padding-top: 10px;
+    margin: 0px auto 0px;
+    text-align: center;
+    width: 45%;
+    color: white;
+    background-color: rgba(3, 1, 1, 0.5);
+    font-family: cursive;
+    width: 600px;
+    height: 400px;
+}
+
+.loginB{
+    color: #ffffff;
+    background-color: cornflowerblue;
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+
+.loginTable tr{
+    text-align: left;
+    font-size: 24px;
+  }
+
+
